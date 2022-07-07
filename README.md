@@ -32,7 +32,7 @@ on comparant cet algorithme a K-means, on trouve les différences suivantes:
 
 # Étapes de l'algorithme DBSCAN:
 
-1. L'algorithme commence par un point arbitraire qui n'a pas été visité et ses informations de voisinage sont extraites du paramètre ϵ. 2. Si ce point contient MinPts dans le voisinage ϵ, la formation de cluster commence. Sinon, le point est étiqueté comme bruit. Ce point peut être trouvé plus tard dans le voisinage ϵ d'un point différent et peut donc faire partie du cluster.
+1. L'algorithme commence par un point arbitraire qui n'a pas été visité et ses informations de voisinage sont extraites du paramètre ϵ. 
 2. Si ce point contient MinPts dans le voisinage ϵ, la formation de cluster commence. Sinon, le point est étiqueté comme bruit. Ce point peut être trouvé plus tard dans le voisinage ϵ d'un point différent et peut donc faire partie du cluster.
 3. Si un point s'avère être un point central, les points situés dans le voisinage ϵ font également partie du cluster. Ainsi, tous les points trouvés dans le voisinage ϵ sont ajoutés, ainsi que leur propre voisinage ϵ, s'ils sont également des points centraux.
 4. Le processus ci-dessus se poursuit jusqu'à ce que le cluster connecté par densité soit complètement trouvé.
